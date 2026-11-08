@@ -1,0 +1,104 @@
+
+
+body {
+  font-size: small;
+  margin: 0;
+  padding: 0 ;
+}
+h2, p {
+  margin: 10px;
+}
+/* Updated ul to be a fixed navigation bar with #333 background */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+}
+/* Removed float to leverage the modern flex spacing requirement */
+ul li {
+  display: block;
+}
+/* Updated nav links padding and colors */
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+ul li a:hover {
+  background-color: #4126dd;
+}
+* {
+  box-sizing: border-box;
+}
+/* Added Arial font-family fallback and adjusted padding to accommodate fixed navbar */
+body {
+  font-family: Arial, sans-serif;
+  padding: 70px 20px 20px 20px;
+  background: #f1f1f1;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+/* Updated card styling to center and cap maximum width for blog posts with 20px margins */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Added required styles for Headings and Links */
+h1 {
+  color: #2c3e50;
+  font-size: 24px;
+}
+h2 {
+  color: #2c3e50;
+  font-size: 20px;
+}
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
